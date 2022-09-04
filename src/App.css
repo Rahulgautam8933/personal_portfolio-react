@@ -377,6 +377,7 @@ padding: 20px ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .navbox1{
   display: flex;
