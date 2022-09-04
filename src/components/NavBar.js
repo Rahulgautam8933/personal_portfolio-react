@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NavBar(props) {
   return (
-    <nav className="navbar navbar-expand-lg bg-light " id='nabarfix'>
+    <nav className="navbar navbar-expand-lg bg-light ">
     <div className="container-fluid">
       <a className="navbar-brand  " id='myHeading' href="#sec1">{props.name}</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
