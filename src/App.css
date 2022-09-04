@@ -1,38 +1,573 @@
-.App {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+body{
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+
+}
+
+/* Navbar */
+
+#nabarfix{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+
+#myHeading{
+  color: blue;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+.myHeading{
+  color: blue;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+.navSide{
+  margin: 30px;
+  background-color: blue;
+}
+
+.navitem:hover{
+  color: white;
+  font-size: 20px;
+  /* background-color: blue; */
+  
+
+}
+
+
+/* home sec */
+
+#card{
+  display: flex;
+  flex-direction: row;
+  margin-top: 88px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card2 h1{
+  color: black;
+}
+.card2 p{
+  color: black;
+}
+
+
+.homecard2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 0px 40px;
+  padding: 0px 60px;
+}
+.homecard2 .homebox1{
+  margin: 15px 0px;
+    padding: 8px 0px;
+
+}
+.homecard2 .homebox1 h1{
+  font-size: 50px;
+    font-weight: bolder;
+    font-family: emoji;
+    color: #1818d7;
+
+}
+.homecard2 .homebox1 h3{
+  font-size: 40px;
+    font-weight: 100;
+    font-family: emoji;
+    color: #283ae7;
+    display: inline;
+
+}
+
+
+.cvbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 8px 51px;
+}
+.cvbox button{
+  width: 111px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: black;
+  color: white;
+  
+}
+.cvbox button:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 2px 3px 20px 2px rgb(124, 124, 231);
+}
+.cvbox button a{
+  color: white;
+  text-decoration: none;
+}
+.cvbox button a:hover{
+  color: black;
+}
+
+
+/* about section */
+
+
+
+#aboutheading{
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 55px;
+}
+.aboutsec{
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content:space-around;
+  
+  /* height: 500px; */
+  flex-wrap: wrap;
+
+}
+
+.aboutsec .box1{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin: 30px 12px;
+  order: 2;
+}
+
+.aboutsec .box2{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin: 30px 12px;
+  order: 1;
+}
+.aboutsec .box2 p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: left;
+  margin: 30px 12px;
+ 
+}
+
+
+.box1 .aboutpic img {
+  width: 300px;
+  height: 330px;
+  border-radius: 40px;
+  border: 2px solid blue;
+  box-shadow: 5px 5px 5px  5px  blue;
+  margin: 12px 12px;
+}
+
+
+.aboutsec .box2{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.aboutmycv{
+  width: 116px;
+  height: 36px;
+  background-color: rgb(153, 153, 228);
+  
+  margin: inherit;
+  border-radius: 9px;
+}
+.aboutmycv a{
+  color: black;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0px 12px;
+    text-decoration: none;
+    
+}
+.aboutmycv:hover{
+  box-shadow: 2px 3px 20px 2px rgb(124, 124, 231);
+
+}
+
+
+/* skills section */
+#skillheading{
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 55px 12px;
+  
+}
+
+.skills{
+  background-color: white;
+  color: black;
+  display: flex;
+  padding: 12px 12px;
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* box-shadow: 12px 12px 12px 12px blue; */
+
+  
+}
+.sbox1{
+  text-align: center;
+  padding: 12px 12px;
+  margin: 12px 12px;
+  border-radius: 12px;
+  /* background-color: rgba(207, 225, 220, 0.56); */
+  
+  background-color: white;
+  /* color: rgb(0, 0, 0); */
+  color: black;
+  border: 2px solid black;
+  box-shadow: 2px 2px 20px 2px blue;
+}
+
+.boxitem{
+    
+  
+  border-radius: 15px;
+  margin: 12px 12px;
+  padding: 12px 12px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 3px 20px 2px blue;
+}
+.boxitem:hover{
+  background-color: rgb(202, 202, 230);
+  cursor: pointer;
+  box-shadow: 2px 3px 20px 2px rgb(124, 124, 231);
+  /* box-shadow: 2px 3px 20px 2px blue; */
+
+}
+
+
+/* project section */
+
+.heading{
+  text-align: center;
+  color: black;
+  background-color:rgb(203, 203, 252) ;
+  padding: 50px 12px;
+}
+
+#project{
+margin: -9px 0px;
+padding: 20px ;
+}
+
+
+ 
+ .container{
+   padding-top: 45px;
+ }
+ 
+ .proimg img{
+   width: 200px;
+   height: 200px;
+   border-radius: 25px;
+ 
+ }
+ .proitem{
+   text-align: center;
+   padding: 20px;
+ }
+
+
+/* contact section  */
+
+
+
+ #contactheading{
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 55px;
+
+
+}
+
+.contactfrom{
+  position: relative;
+  z-index: -1;
+  background-color: white;
+  color: black;
+}
+ 
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+} 
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Bree Serif', serif;
+
+}
+
+#submit{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#contact-box #form button {
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  border-radius: 12px;
+  width: 126px;
+  height: 40px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+
+/* Footer */
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbox1{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.navbox1 .navitems{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 7px;
+  flex-wrap: wrap;
+}
+.navbox1 .navitems a{
+  margin: 5px;
+  padding: 7px;
+  text-decoration: none;
   color: white;
+  font-weight: bolder;
+}
+.navbox1 .mycontact{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 17px;
+  padding: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbox1 .navitems a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 17px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer .navbox2{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 19px;
+  padding: 7px 40px;
+
 }
+
+.footer .navbox2 .logoimg{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.footer .navbox2 .logoimg img{
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  margin:  12px 12px;
+  
+}
+.footer .navbox2 .logoimg img:hover{
+  box-shadow: 2px 3px 20px 2px rgb(124, 124, 231);
+}
+.navbox2 .cvbutton {
+  width: 152px;
+    height: 39px;
+  border-radius: 12px;
+  background-color: blue;
+  color: black;
+  text-align: center;
+  margin: auto;
+}
+.navbox2 .cvbutton a{
+  
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.navbox2 .cvbutton:hover{
+  box-shadow: 2px 3px 20px 2px rgb(124, 124, 231);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+#sec1 #card .card1{
+ background-color: rgb(88, 88, 148);
+ display: flex;
+ flex-direction: column;
+ padding: 12px 12px;
+ text-align: center;
+ border-radius: 15PX;
+
+}
+#sec1 #card .card1 .contactlogo{
+ display: flex;
+}
+
+#sec1 #card .card1 .img img{
+ width: 200px;
+ height: 200px;
+ margin: auto;
+ border-radius: 100px;
+ margin: 15px 50px;
+}
+ 
+
+.name{
+ text-align: center;
+}
+#sec1 #card .card2{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ padding: 60px;
+}
+.aboutme{
+ background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GOW60v6GG_dXtsT56xedjQpxYnxWEMlwUA&usqp=CAU') no-repeat center center/cover;
+ margin-top: -24px;
+ padding: 100px;
+}
+#project{
+ /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIlOIOQJbQuHnTPbiaadpsGMMGhfAwpIyKFg&usqp=CAU') no-repeat center center/cover; */
+ /* background-color: gainsboro; */
+ background-color:rgb(203, 203, 252) ;
+}
+.contactlogo ul li a img{
+ width: 20px;
+ height: 20px;
+ border-radius: 12px;
+ margin: 12px 12px;
+ 
+
+}
+.contactlogo ul {
+ display: flex;
+ flex-direction: row;
+ background-color: white;
+ text-align: center;
+}
+.contactlogo ul li{
+ list-style: none;
+}
+.contactlogo {
+ background-color: white;
+ margin-top: 36px;
+}
+/* .contactlogo ul li a img:hover{
+ width: 30px;
+ height: 30px;
+ border-radius: 12px;
+
+} */
+/* #card::before {
+ 
+ /* background-image:image('img/img1.jpg') ; */
+ /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7Og2KCplTi_apfgKFcaGCNc8TdW_Ca7gKQ&usqp=CAU') no-repeat center center/cover; */
+ /* content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ top: 0;
+ left: 0;
+ opacity: 0.3;
+} */ 
+
+
+ /* #project .container{
+ width: 70%;
+ margin:  12px auto;
+} */
+/* #sec2 .heading{
+ background-color: black;
+ margin: -12px 0px;
+ padding: 0px 12px;
+ color: white;
+}
+.boxmargin{
+ margin-top: 30px;
+} */ 
